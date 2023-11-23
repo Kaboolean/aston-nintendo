@@ -169,3 +169,28 @@ section {
     transform: translateY(-5px);
     transition: transform 0.3s ease-in-out;
   }
+  
+  .news{
+    min-width:20%;
+    max-width: 20%;
+    max-height:100px;
+
+    &__card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-height: 60px;
+
+      &__img {
+        display:block;
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        height: auto;
+      }
+      .__text {
+        grid-area: 1 / 2 / 2 / 5;
+      }
+    }
+  }
